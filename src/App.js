@@ -1,28 +1,17 @@
 import React, { Component } from 'react';
-// import logo from './logo.svg';
+import TOC from "./components/TOC";
+import Content from "./components/Content";
+import Subject from "./components/Subject";
 import './App.css';
 
-class Subject extends Component {
+//component학습
+/* class Subject extends Component {
   render() {
     return (
       <header>
         <h1>WEB</h1>
         world wide web!
       </header>
-    );
-  }
-} 
-
-class TOC extends Component{
-  render() {
-    return(
-      <nav>
-        <ul>
-          <li><a href="1.html">HTML</a></li>
-          <li><a href="2.html">CSS</a></li>
-          <li><a href="3.html">JavaScript</a></li>
-        </ul>
-      </nav>
     );
   }
 }
@@ -36,15 +25,20 @@ class Content extends Component{
       </article>
     );
   }
-}
+} */
+
 //유사 자바스크립트
 class App extends Component {
   render() {
     return (
       <div className="App">
+        {/* component학습 */}
+        {/* <Subject></Subject>
+        <Content></Content> */}
+        {/* props학습 */}
         <Subject title="WEB" sub="world wide web!"></Subject>
         <TOC></TOC>
-        <Content></Content>
+        <Content title="HTML" desc="HTML is HyperText Markup Language."></Content>
       </div>
     );
   }
